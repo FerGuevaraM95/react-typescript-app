@@ -1,5 +1,7 @@
 import React from 'react';
 
+import TaskForm from './TaskForm';
+
 class App extends React.Component<IProps, Istate> {
   constructor(props: IProps) {
     super(props);
@@ -13,6 +15,13 @@ class App extends React.Component<IProps, Istate> {
         <nav className="navbar navbar-light bg-light">
           <a href="/" className="navbar-brand">{this.props.title}</a>
         </nav>
+        <div className="container p-4">
+          <div className="row">
+            <div className="col-md-4">
+              <TaskForm />
+            </div>
+          </div>
+        </div>
       </div>
     );
   } 
